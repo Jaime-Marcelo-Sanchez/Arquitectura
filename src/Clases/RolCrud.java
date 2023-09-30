@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class RolCrud {
 
-    private String[] roles = new String[10000];
+    private static String[] roles = new String[10000];
     static int indice = 1;
 
     public static int getIndice() {
