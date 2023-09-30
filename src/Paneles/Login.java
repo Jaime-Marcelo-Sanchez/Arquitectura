@@ -155,9 +155,8 @@ public class Login extends javax.swing.JFrame {
 
         if (val.validarUsuario(userlog)) {
             JOptionPane.showMessageDialog(null, "Bienvenido " + userlog.getUsuario());
-            System.out.println(userlog.getRol());
             if (val.getRol(userlog.getUsuario()).equals("Administrador")) {
-                new UserManager().setVisible(true);
+                new Principal().setVisible(true);
             } else {
                 new User().setVisible(true);
             }

@@ -7,13 +7,13 @@ public class Usuarios {
     public Usuarios() {
     }
 
-    public Usuarios(int id, String nombres, String rol, String usuario, String clave) {
+    public Usuarios(int id, String nombres, String rol, String usuario, String clave, String estado) {
         this.id = id;
         this.nombres = nombres;
         this.rol = rol;
         this.usuario = usuario;
         this.clave = clave;
-        this.estado = "Normal";
+        this.estado = estado;
     }
 
     public String getNombres() {

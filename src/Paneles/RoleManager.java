@@ -249,7 +249,7 @@ public class RoleManager extends javax.swing.JFrame {
     private void bregresarActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_bregresarActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
-        panelmain.setVisible(true);
+        new Principal().setVisible(true);
     }// GEN-LAST:event_bregresarActionPerformed
 
     private void bsalirActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_bsalirActionPerformed

@@ -13,10 +13,7 @@ public class Principal extends javax.swing.JFrame {
     /**
      * Creates new form Principal
      */
-    Login logop = new Login();
-    RoleManager grol = new RoleManager();
-    UserManager guser = new UserManager();
-
+    
     public Principal() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -119,13 +116,13 @@ public class Principal extends javax.swing.JFrame {
 
     private void bgusuarioActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_bgusuarioActionPerformed
         // TODO add your handling code here:
-        guser.setVisible(true);
+        new UserManager().setVisible(true);
         this.setVisible(false);
     }// GEN-LAST:event_bgusuarioActionPerformed
 
     private void bgrolActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_bgrolActionPerformed
         // TODO add your handling code here:
-        grol.setVisible(true);
+        new RoleManager().setVisible(true);
         this.setVisible(false);
     }// GEN-LAST:event_bgrolActionPerformed
 
@@ -136,7 +133,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void bregresarActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        logop.setVisible(true);
+        new Login().setVisible(true);
         this.setVisible(false);
     }// GEN-LAST:event_jButton3ActionPerformed
 
