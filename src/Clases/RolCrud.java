@@ -31,8 +31,8 @@ public class RolCrud {
     }
 
     public void actualizarRol(int indiceAc, String rol) {
-        if (indiceAc == 0) {
-            JOptionPane.showMessageDialog(null, "No se puede elditar el rol de Administrador");
+        if (indiceAc == 0 || indiceAc == 1) {
+            JOptionPane.showMessageDialog(null, "No se pueden editar los roles de Administrador y Empleado");
         } else if (indiceAc > indice || indiceAc < 0) {
             JOptionPane.showMessageDialog(null, "Indice no valido");
         } else {
@@ -41,8 +41,8 @@ public class RolCrud {
     }
 
     public void eliminarRol(int indiceaux) {
-        if (indiceaux == 0) {
-            JOptionPane.showMessageDialog(null, "No se puede eliminar el rol de Administrador");
+        if (indiceaux == 0 || indiceaux == 1) {
+            JOptionPane.showMessageDialog(null, "No se puede eliminar los roles de Administrador y Empleado");
         } else if (indiceaux > indice || indiceaux < 0) {
             JOptionPane.showMessageDialog(null, "No existe el rol");
         } else {

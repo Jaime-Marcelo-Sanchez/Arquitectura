@@ -49,13 +49,15 @@
                           </Group>
                           <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="163" max="32767" attributes="0"/>
+                      <EmptySpace pref="110" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
+                              <Component id="jbcerrarsesion" min="-2" pref="116" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="bregresar" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                               <Component id="bsalir" min="-2" max="-2" attributes="0"/>
@@ -74,6 +76,7 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="bsalir" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="bregresar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbcerrarsesion" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
@@ -214,6 +217,14 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Gestor de Roles"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbcerrarsesion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cerrar sesion"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbcerrarsesionActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
