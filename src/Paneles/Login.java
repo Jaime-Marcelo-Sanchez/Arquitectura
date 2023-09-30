@@ -6,7 +6,6 @@ package Paneles;
 
 import javax.swing.JOptionPane;
 
-import Clases.Crud;
 import Clases.Usuarios;
 import Clases.Validacion;
 

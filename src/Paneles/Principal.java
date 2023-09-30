@@ -13,6 +13,10 @@ public class Principal extends javax.swing.JFrame {
     /**
      * Creates new form Principal
      */
+    Login logop = new Login();
+    RoleManager grol = new RoleManager();
+    UserManager guser = new UserManager();
+
     public Principal() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -25,55 +29,116 @@ public class Principal extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // <editor-fold defaultstate="collapsed" desc="Generated
     // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        bgusuario = new javax.swing.JButton();
+        bgrol = new javax.swing.JButton();
+        bregresar = new javax.swing.JButton();
+        bsalir = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Gestor de usuarios");
+        bgusuario.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        bgusuario.setText("Gestor de usuarios");
+        bgusuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bgusuarioActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Gestor de roles");
+        bgrol.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        bgrol.setText("Gestor de roles");
+        bgrol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bgrolActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("Regresar");
+        bregresar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        bregresar.setText("Regresar");
+        bregresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bregresarActionPerformed(evt);
+            }
+        });
 
-        jButton4.setText("Salir");
+        bsalir.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        bsalir.setText("Salir");
+        bsalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bsalirActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel1.setText("Escoja una opcion");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGap(171, 171, 171)
-                                .addComponent(jButton1)
-                                .addGap(110, 110, 110)
-                                .addComponent(jButton2)
-                                .addContainerGap(198, Short.MAX_VALUE))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton3)
+                                .addComponent(bregresar)
                                 .addGap(54, 54, 54)
-                                .addComponent(jButton4)
-                                .addGap(45, 45, 45)));
+                                .addComponent(bsalir)
+                                .addGap(45, 45, 45))
+                        .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(94, 94, 94)
+                                                .addComponent(bgusuario)
+                                                .addGap(71, 71, 71)
+                                                .addComponent(bgrol))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(203, 203, 203)
+                                                .addComponent(jLabel1)))
+                                .addContainerGap(132, Short.MAX_VALUE)));
         layout.setVerticalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addContainerGap(183, Short.MAX_VALUE)
+                                .addGap(39, 39, 39)
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76,
+                                        Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jButton2)
-                                        .addComponent(jButton1))
+                                        .addComponent(bgrol)
+                                        .addComponent(bgusuario))
                                 .addGap(103, 103, 103)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jButton3)
-                                        .addComponent(jButton4))
+                                        .addComponent(bregresar)
+                                        .addComponent(bsalir))
                                 .addGap(34, 34, 34)));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bgusuarioActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_bgusuarioActionPerformed
+        // TODO add your handling code here:
+        guser.setVisible(true);
+        this.setVisible(false);
+    }// GEN-LAST:event_bgusuarioActionPerformed
+
+    private void bgrolActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_bgrolActionPerformed
+        // TODO add your handling code here:
+        grol.setVisible(true);
+        this.setVisible(false);
+    }// GEN-LAST:event_bgrolActionPerformed
+
+    private void bsalirActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_bsalirActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }// GEN-LAST:event_bsalirActionPerformed
+
+    private void bregresarActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        logop.setVisible(true);
+        this.setVisible(false);
+    }// GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -115,9 +180,10 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton bgrol;
+    private javax.swing.JButton bgusuario;
+    private javax.swing.JButton bregresar;
+    private javax.swing.JButton bsalir;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
