@@ -2,7 +2,7 @@ package Clases;
 
 public class Usuarios {
     int id;
-    String nombres, rol, usuario, clave;
+    String nombres, rol, usuario, clave, estado;
 
     public Usuarios() {
     }
@@ -13,6 +13,7 @@ public class Usuarios {
         this.rol = rol;
         this.usuario = usuario;
         this.clave = clave;
+        this.estado = "Normal";
     }
 
     public String getNombres() {
@@ -53,6 +54,14 @@ public class Usuarios {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
 }

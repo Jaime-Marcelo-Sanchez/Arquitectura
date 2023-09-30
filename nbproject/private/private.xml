@@ -5,8 +5,10 @@
         <group>
             <file>file:/D:/GITHUB/Trabajos/Arquitectura/src/Paneles/RoleManager.java</file>
             <file>file:/D:/GITHUB/Trabajos/Arquitectura/src/Paneles/Login.java</file>
-            <file>file:/D:/GITHUB/Trabajos/Arquitectura/src/Clases/main.java</file>
+            <file>file:/D:/GITHUB/Trabajos/Arquitectura/src/Clases/RolCrud.java</file>
             <file>file:/D:/GITHUB/Trabajos/Arquitectura/src/Paneles/UserManager.java</file>
+            <file>file:/D:/GITHUB/Trabajos/Arquitectura/src/Clases/Crud.java</file>
+            <file>file:/D:/GITHUB/Trabajos/Arquitectura/src/Clases/Usuarios.java</file>
         </group>
     </open-files>
 </project-private>

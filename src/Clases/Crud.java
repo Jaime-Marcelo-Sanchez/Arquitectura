@@ -7,7 +7,8 @@ public class Crud {
     private List<Usuarios> usuarios = new ArrayList<>();
 
     public Crud() {
-        usuarios.add(new Usuarios(1, "Juan", "Administrador", "juan", "juan56"));
+        usuarios.add(new Usuarios(1, "Juan", "Administrador", "juan", "FdaWVnDzzWwcYfteuQwMHg==")); // Clave encriptada:
+                                                                                                    // "juan56"
     }
 
     public void crearUsuario(Usuarios usuario) {
