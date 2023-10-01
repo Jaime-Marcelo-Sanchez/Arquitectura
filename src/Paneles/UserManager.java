@@ -15,7 +15,6 @@ public class UserManager extends javax.swing.JFrame {
 
     RolCrud rolcrud = new RolCrud();
     String[] listRoles = rolcrud.getRoles();
-    Principal mainop = new Principal();
     Encriptar encript = new Encriptar();
 
     Crud usercrud = new Crud();
@@ -85,6 +84,7 @@ public class UserManager extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jcrole1 = new javax.swing.JComboBox<>();
         jcestado = new javax.swing.JComboBox<>();
+        jbbuscar = new javax.swing.JButton();
         jbeliminar = new javax.swing.JButton();
         jbcerrarsesion = new javax.swing.JButton();
 
@@ -181,6 +181,13 @@ public class UserManager extends javax.swing.JFrame {
             }
         });
 
+        jbbuscar.setText("Buscar");
+        jbbuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbbuscarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -214,13 +221,19 @@ public class UserManager extends javax.swing.JFrame {
                     .addComponent(jcrole1, 0, 159, Short.MAX_VALUE)
                     .addComponent(jcestado, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(66, 66, 66))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(243, 243, 243)
+                .addComponent(jbbuscar)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
+                        .addGap(8, 8, 8)
+                        .addComponent(jbbuscar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(fieldid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2)))
@@ -336,6 +349,27 @@ public class UserManager extends javax.swing.JFrame {
         this.setVisible(false);
         new Login().setVisible(true);
     }//GEN-LAST:event_jbcerrarsesionActionPerformed
+
+    private void jbbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbbuscarActionPerformed
+        // TODO add your handling code here:
+        if(!fieldid.getText().trim().equals("")){
+            idtext = Integer.parseInt(fieldid.getText().trim());
+            if(usercrud.buscarId(idtext) != null){
+
+                fieldnames.setText(usercrud.buscarId(idtext).getNombres());
+                fieldpassword.setText(encript.desencriptarClave(usercrud.buscarId(idtext).getClave()));
+                fieldrepassword.setText(encript.desencriptarClave(usercrud.buscarId(idtext).getClave()));
+                fielduser.setText(usercrud.buscarId(idtext).getUsuario());
+                
+                jcestado.setSelectedItem(usercrud.buscarId(idtext).getEstado());
+                jcrole1.setSelectedItem(usercrud.buscarId(idtext).getRol());
+            }else{
+                JOptionPane.showMessageDialog(null, "No existe un usuario con tal Id");
+            }
+        }else{
+            JOptionPane.showMessageDialog(null, "No se ingreso una Id");
+        }
+    }//GEN-LAST:event_jbbuscarActionPerformed
 
     private void jcrole1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jcrole1ActionPerformed
         // TODO add your handling code here:
@@ -603,6 +637,7 @@ public class UserManager extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton jbban;
+    private javax.swing.JButton jbbuscar;
     private javax.swing.JButton jbcancel;
     private javax.swing.JButton jbcerrarsesion;
     private javax.swing.JButton jbedit;
