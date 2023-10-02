@@ -4,12 +4,12 @@ import javax.swing.JOptionPane;
 
 public class Validacion {
 
-    int contadorLetras, contadorNum, intentos;
-    boolean validacion = false, logeo = false;
-    Crud op = new Crud();
-    Usuarios UserOP = new Usuarios();
-    Encriptar encriptar = new Encriptar();
-    String nuevaClave = "";
+    private int contadorLetras, contadorNum, intentos;
+    private boolean validacion = false, logeo = false;
+    private Crud op = new Crud();
+    private Usuarios UserOP = new Usuarios();
+    private Encriptar encriptar = new Encriptar();
+    private String nuevaClave = "";
 
     public boolean validarClave(String clave) {
         contadorLetras = 0;

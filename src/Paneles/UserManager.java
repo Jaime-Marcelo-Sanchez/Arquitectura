@@ -13,24 +13,24 @@ import Clases.Validacion;
 
 public class UserManager extends javax.swing.JFrame {
 
-    RolCrud rolcrud = new RolCrud();
-    String[] listRoles = rolcrud.getRoles();
-    Encriptar encript = new Encriptar();
+    private RolCrud rolcrud = new RolCrud();
+    private String[] listRoles = rolcrud.getRoles();
+    private Encriptar encript = new Encriptar();
 
-    Crud usercrud = new Crud();
-    List<Usuarios> listUsuarios;
+    private Crud usercrud = new Crud();
+    private List<Usuarios> listUsuarios;
 
-    Validacion valid = new Validacion();
+    private Validacion valid = new Validacion();
 
-    int idtext;
-    String nombrestext, roltext, usuariotext, clavetext, reclavetext, estadotext;
+    private int idtext;
+    private String nombrestext, roltext, usuariotext, clavetext, reclavetext, estadotext;
 
-    int idTabla;
-    String nombresTabla, rolTabla, usuarioTabla, claveTabla, estadoTabla;
+    private int idTabla;
+    private String nombresTabla, rolTabla, usuarioTabla, claveTabla, estadoTabla;
 
-    String[] estados = { "Normal", "Bloqueado", "Desbloqueado" };
+    private String[] estados = { "Normal", "Bloqueado", "Desbloqueado" };
 
-    DefaultTableModel modelo;
+    private DefaultTableModel modelo;
 
     public UserManager() {
         initComponents();

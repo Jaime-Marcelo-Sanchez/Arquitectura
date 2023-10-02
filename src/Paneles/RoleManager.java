@@ -10,9 +10,7 @@ import javax.swing.JOptionPane;
  */
 public class RoleManager extends javax.swing.JFrame {
 
-    RolCrud rolop = new RolCrud();
-
-    Principal panelmain = new Principal();
+    private RolCrud rolop = new RolCrud();
 
     String rol;
     int indice;
