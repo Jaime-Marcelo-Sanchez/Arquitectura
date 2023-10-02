@@ -1,8 +1,8 @@
 package Clases;
 
 public class Usuarios {
-    int id;
-    String nombres, rol, usuario, clave, estado;
+    private int id;
+    private String nombres, rol, usuario, clave, estado;
 
     public Usuarios() {
     }

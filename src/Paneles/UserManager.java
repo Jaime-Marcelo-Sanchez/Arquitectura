@@ -57,7 +57,8 @@ public class UserManager extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
@@ -114,7 +115,7 @@ public class UserManager extends javax.swing.JFrame {
             }
         });
 
-        jbban.setText("Banear");
+        jbban.setText("Bloquear");
         jbban.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbbanActionPerformed(evt);
@@ -138,13 +139,12 @@ public class UserManager extends javax.swing.JFrame {
         jScrollPane1.setBorder(javax.swing.BorderFactory.createTitledBorder("Data Base"));
 
         Tabla.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+                new Object[][] {
 
-            },
-            new String [] {
-                "Id", "Nombres", "Rol", "Usuario", "Contraseña", "Estado"
-            }
-        ));
+                },
+                new String[] {
+                        "Id", "Nombres", "Rol", "Usuario", "Contraseña", "Estado"
+                }));
         Tabla.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 TablaMouseClicked(evt);
@@ -191,82 +191,108 @@ public class UserManager extends javax.swing.JFrame {
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING))))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(fieldpassword, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
-                    .addComponent(fielduser, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(fieldnames, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(fieldid, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(fieldrepassword))
-                .addGap(92, 92, 92)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jcrole1, 0, 159, Short.MAX_VALUE)
-                    .addComponent(jcestado, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(66, 66, 66))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(243, 243, 243)
-                .addComponent(jbbuscar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(70, 70, 70)
+                                                .addGroup(jPanel1Layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addComponent(jLabel2)
+                                                        .addComponent(jLabel4)
+                                                        .addComponent(jLabel5)))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout
+                                                .createSequentialGroup()
+                                                .addContainerGap()
+                                                .addGroup(jPanel1Layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jLabel3,
+                                                                javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addComponent(jLabel6,
+                                                                javax.swing.GroupLayout.Alignment.TRAILING))))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(fieldpassword, javax.swing.GroupLayout.Alignment.LEADING,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
+                                        .addComponent(fielduser, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(fieldnames, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(fieldid, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(fieldrepassword))
+                                .addGap(92, 92, 92)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel7)
+                                        .addComponent(jLabel8))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout
+                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jcrole1, 0, 159, Short.MAX_VALUE)
+                                        .addComponent(jcestado, 0, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                Short.MAX_VALUE))
+                                .addGap(66, 66, 66))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(243, 243, 243)
+                                .addComponent(jbbuscar)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
         jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addComponent(jbbuscar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(fieldid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(jcrole1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(9, 9, 9)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fieldnames, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(fielduser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(fieldpassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel8)
-                            .addComponent(jcestado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(fieldrepassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(46, Short.MAX_VALUE))
-        );
+                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(8, 8, 8)
+                                                .addComponent(jbbuscar)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(jPanel1Layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(fieldid, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(jLabel2)))
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(42, 42, 42)
+                                                .addGroup(jPanel1Layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(jLabel7)
+                                                        .addComponent(jcrole1, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(9, 9, 9)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(fieldnames, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel3))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(18, 18, 18)
+                                                .addGroup(jPanel1Layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(jLabel4)
+                                                        .addComponent(fielduser, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(jPanel1Layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(jLabel5)
+                                                        .addComponent(fieldpassword,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(43, 43, 43)
+                                                .addGroup(jPanel1Layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(jLabel8)
+                                                        .addComponent(jcestado, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel6)
+                                        .addComponent(fieldrepassword, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(46, Short.MAX_VALUE)));
 
         jbeliminar.setText("Eliminar");
         jbeliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -285,91 +311,110 @@ public class UserManager extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(59, 59, 59)
-                        .addComponent(jbnew)
-                        .addGap(18, 18, 18)
-                        .addComponent(jbsave)
-                        .addGap(18, 18, 18)
-                        .addComponent(jbeliminar)
-                        .addGap(18, 18, 18)
-                        .addComponent(jbedit)
-                        .addGap(18, 18, 18)
-                        .addComponent(jbban)
-                        .addGap(18, 18, 18)
-                        .addComponent(jbcancel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
-                        .addComponent(jbcerrarsesion))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jScrollPane1))
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(18, 18, 18)
-                .addComponent(jbleave)
-                .addGap(16, 16, 16))
-        );
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(21, 21, 21)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel1)
+                                                .addGap(59, 59, 59)
+                                                .addComponent(jbnew)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jbsave)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jbeliminar)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jbedit)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jbban)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jbcancel)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40,
+                                                        Short.MAX_VALUE)
+                                                .addComponent(jbcerrarsesion))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING,
+                                                                false)
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGap(6, 6, 6)
+                                                                .addComponent(jScrollPane1))
+                                                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(0, 0, Short.MAX_VALUE)))
+                                .addGap(18, 18, 18)
+                                .addComponent(jbleave)
+                                .addGap(16, 16, 16)));
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jbnew)
-                            .addComponent(jbsave)
-                            .addComponent(jbedit)
-                            .addComponent(jbban)
-                            .addComponent(jbcancel)
-                            .addComponent(jbleave)
-                            .addComponent(jbeliminar)
-                            .addComponent(jbcerrarsesion))))
-                .addGap(18, 18, 18)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(12, 12, 12)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45))
-        );
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(24, 24, 24)
+                                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32,
+                                                        javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(15, 15, 15)
+                                                .addGroup(layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(jbnew)
+                                                        .addComponent(jbsave)
+                                                        .addComponent(jbedit)
+                                                        .addComponent(jbban)
+                                                        .addComponent(jbcancel)
+                                                        .addComponent(jbleave)
+                                                        .addComponent(jbeliminar)
+                                                        .addComponent(jbcerrarsesion))))
+                                .addGap(18, 18, 18)
+                                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(12, 12, 12)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 347,
+                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(45, 45, 45)));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jbcerrarsesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbcerrarsesionActionPerformed
+    private void jbcerrarsesionActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jbcerrarsesionActionPerformed
         // TODO add your handling code here:
-        this.setVisible(false);
-        new Login().setVisible(true);
-    }//GEN-LAST:event_jbcerrarsesionActionPerformed
+        int opcion = Integer.parseInt(JOptionPane.showInputDialog("¿Esta seguro que desea cerrar sesion?" + "\n0. Si"
+                + "\n1. No"));
 
-    private void jbbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbbuscarActionPerformed
+        switch (opcion) {
+            case 0:
+                new Login().setVisible(true);
+                this.setVisible(false);
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "No se cerro sesion");
+                break;
+        }
+    }// GEN-LAST:event_jbcerrarsesionActionPerformed
+
+    private void jbbuscarActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jbbuscarActionPerformed
         // TODO add your handling code here:
-        if(!fieldid.getText().trim().equals("")){
+        if (!fieldid.getText().trim().equals("")) {
             idtext = Integer.parseInt(fieldid.getText().trim());
-            if(usercrud.buscarId(idtext) != null){
+            if (usercrud.buscarId(idtext) != null) {
 
                 fieldnames.setText(usercrud.buscarId(idtext).getNombres());
                 fieldpassword.setText(encript.desencriptarClave(usercrud.buscarId(idtext).getClave()));
                 fieldrepassword.setText(encript.desencriptarClave(usercrud.buscarId(idtext).getClave()));
                 fielduser.setText(usercrud.buscarId(idtext).getUsuario());
-                
+
                 jcestado.setSelectedItem(usercrud.buscarId(idtext).getEstado());
                 jcrole1.setSelectedItem(usercrud.buscarId(idtext).getRol());
-            }else{
+
+                JOptionPane.showMessageDialog(null, "Usuario encontrado");
+            } else {
                 JOptionPane.showMessageDialog(null, "No existe un usuario con tal Id");
             }
-        }else{
+        } else {
             JOptionPane.showMessageDialog(null, "No se ingreso una Id");
         }
-    }//GEN-LAST:event_jbbuscarActionPerformed
+    }// GEN-LAST:event_jbbuscarActionPerformed
 
     private void jcrole1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jcrole1ActionPerformed
         // TODO add your handling code here:
@@ -453,10 +498,11 @@ public class UserManager extends javax.swing.JFrame {
                                 usercrud.actualizarUsuario(
                                         new Usuarios(idtext, nombrestext, roltext, usuariotext, clavetext, "Normal"));
                                 JOptionPane.showMessageDialog(null,
-                                        "No se puede editar el estado del Administrador principal");
+                                        "Administrador principal actualizado, pero no su rol");
                             } else {
                                 usercrud.actualizarUsuario(
                                         new Usuarios(idtext, nombrestext, roltext, usuariotext, clavetext, estadotext));
+                                JOptionPane.showMessageDialog(null, "Usuario actualizado");
                             }
                         } else {
                             JOptionPane.showMessageDialog(null, "El usuario no existe, no se encuentra su id");
@@ -480,7 +526,20 @@ public class UserManager extends javax.swing.JFrame {
         idtext = Integer.parseInt(fieldid.getText().trim());
         usuariotext = fielduser.getText().trim();
         if (usercrud.leerUsuario(usuariotext) != null || usercrud.buscarId(idtext) != null) {
-            usercrud.leerUsuario(usuariotext).setEstado("Bloqueado");
+            int opcion2 = Integer
+                    .parseInt(JOptionPane.showInputDialog("¿Esta seguro que desea Bloquear el usuario?"
+                            + "\n0. Si" + "\n1. No"));
+
+            switch (opcion2) {
+                case 0:
+                    usercrud.leerUsuario(usuariotext).setEstado("Bloqueado");
+                    JOptionPane.showMessageDialog(null, "Usuario bloqueado");
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "No se bloqueo el usuario");
+                    break;
+            }
+
         } else {
             JOptionPane.showMessageDialog(null, "El usuario no existe, no se encuentra su id o su nombre de usuario");
         }
@@ -526,6 +585,7 @@ public class UserManager extends javax.swing.JFrame {
                     if (!usercrud.verificarId(idtext)) {
                         usercrud.crearUsuario(
                                 new Usuarios(idtext, nombrestext, roltext, usuariotext, clavetext, estadotext));
+                        JOptionPane.showMessageDialog(null, "Usuario creado");
                     }
                 } else {
                     JOptionPane.showMessageDialog(null, "Las claves no son iguales");
@@ -541,51 +601,56 @@ public class UserManager extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        // <editor-fold defaultstate="collapsed" desc=" Look and feel setting code
-        // (optional) ">
-        /*
-         * If Nimbus (introduced in Java SE 6) is not available, stay with the default
-         * look and feel.
-         * For details see
-         * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(UserManager.class.getName()).log(java.util.logging.Level.SEVERE, null,
-                    ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(UserManager.class.getName()).log(java.util.logging.Level.SEVERE, null,
-                    ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(UserManager.class.getName()).log(java.util.logging.Level.SEVERE, null,
-                    ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(UserManager.class.getName()).log(java.util.logging.Level.SEVERE, null,
-                    ex);
-        }
-        // </editor-fold>
-        // </editor-fold>
-        // </editor-fold>
-        // </editor-fold>
-        // </editor-fold>
-        // </editor-fold>
-        // </editor-fold>
-        // </editor-fold>
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new UserManager().setVisible(true);
-            }
-        });
-    }
+    // public static void main(String args[]) {
+    // /* Set the Nimbus look and feel */
+    // // <editor-fold defaultstate="collapsed" desc=" Look and feel setting code
+    // // (optional) ">
+    // /*
+    // * If Nimbus (introduced in Java SE 6) is not available, stay with the default
+    // * look and feel.
+    // * For details see
+    // * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+    // */
+    // try {
+    // for (javax.swing.UIManager.LookAndFeelInfo info :
+    // javax.swing.UIManager.getInstalledLookAndFeels()) {
+    // if ("Nimbus".equals(info.getName())) {
+    // javax.swing.UIManager.setLookAndFeel(info.getClassName());
+    // break;
+    // }
+    // }
+    // } catch (ClassNotFoundException ex) {
+    // java.util.logging.Logger.getLogger(UserManager.class.getName()).log(java.util.logging.Level.SEVERE,
+    // null,
+    // ex);
+    // } catch (InstantiationException ex) {
+    // java.util.logging.Logger.getLogger(UserManager.class.getName()).log(java.util.logging.Level.SEVERE,
+    // null,
+    // ex);
+    // } catch (IllegalAccessException ex) {
+    // java.util.logging.Logger.getLogger(UserManager.class.getName()).log(java.util.logging.Level.SEVERE,
+    // null,
+    // ex);
+    // } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+    // java.util.logging.Logger.getLogger(UserManager.class.getName()).log(java.util.logging.Level.SEVERE,
+    // null,
+    // ex);
+    // }
+    // // </editor-fold>
+    // // </editor-fold>
+    // // </editor-fold>
+    // // </editor-fold>
+    // // </editor-fold>
+    // // </editor-fold>
+    // // </editor-fold>
+    // // </editor-fold>
+    // /* Create and display the form */
+    // java.awt.EventQueue.invokeLater(new Runnable() {
+    // public void run() {
+    // new UserManager().setVisible(true);
+    // }
+    // });
+    // }
 
     public void clearField() {
         fieldid.setText("");

@@ -21,11 +21,11 @@ public class RolCrud {
         roles[indice] = rol;
     }
 
-    public String leerRol(String rol) {
-        for (String r : roles) {
-            if (r.equals(rol)) {
-                return r;
-            }
+    public String leerRol(int indiceaux) {
+        if (indiceaux > indice || indiceaux < 0) {
+            JOptionPane.showMessageDialog(null, "No existe el rol");
+        } else {
+            return roles[indiceaux];
         }
         return null;
     }
